@@ -1,0 +1,169 @@
+cv:
+  name: Jiarui (Jerry) Yan
+  label: MS in Computational Data Science, Carnegie Mellon University
+  email: jerryy2@cs.cmu.edu
+  phone: "(206) 840-8166"
+  location: Pittsburgh, PA
+  image: ""
+  summary: >
+    Master's student at Carnegie Mellon working on LLM pre-training data, post-training,
+    reinforcement learning, and agentic systems. Previously a software engineer intern at Google.
+
+  social_networks:
+    - network: GitHub
+      username: JerryYan123
+    - network: LinkedIn
+      username: JerryY
+
+  sections:
+    Education:
+      - institution: Carnegie Mellon University, School of Computer Science
+        location: Pittsburgh, PA
+        url: https://www.cs.cmu.edu/
+        area: Computational Data Science
+        studyType: MS
+        start_date: 2025-08
+        end_date: 2027-05
+        score: "GPA 3.8/4.0"
+        courses: "Large Language Models, Advanced NLP, Multimodal Machine Learning, Deep Learning, Cloud Computing, Distributed Systems"
+
+      - institution: University of Washington, Information School
+        location: Seattle, WA
+        url: https://ischool.uw.edu/
+        area: "Informatics: Data Science (major), Applied Mathematics (minor)"
+        studyType: BS
+        start_date: 2021-09
+        end_date: 2025-06
+        score: "GPA 3.94/4.0"
+        highlights:
+          - Magna Cum Laude (top 3.5%); Dean's List every term.
+          - "Coursework: Machine Learning, NLP, Numerical Analysis, Probability I & II, Linear Algebra, Methods in Data Science."
+
+    Research:
+      - company: Stanford University
+        position: Research Assistant — Prof. Sanmi Koyejo
+        location: Palo Alto, CA
+        start_date: 2026-05
+        summary: RL Environment Scaling Laws (manuscript in preparation)
+        highlights:
+          - Developing scaling laws that predict how much RL post-training will improve a model from measurable properties of the training environment, rather than from compute alone.
+          - Designed metrics that make these environment properties controllable and cheap to measure, enabling prediction before a full training run is committed.
+          - Running controlled experiments that hold the RL algorithm fixed to isolate environment effects across math, coding, and tool-use tasks.
+
+      - company: Carnegie Mellon University
+        position: Graduate Researcher — Prof. Chenyan Xiong
+        location: Pittsburgh, PA
+        start_date: 2026-01
+        summary: Pre-training Data Refinement (manuscript in preparation)
+        highlights:
+          - Built an end-to-end model-based HTML-to-text refiner on Qwen3-1.7B with 32K-token context that replaces the standard multi-stage heuristic pipeline in a single pass, lifting token retention from 40.5% to 54.7% on DCLM CommonCrawl.
+          - Trained the refiner in two stages — SFT warmup on quality-merged labels, then GRPO reinforcement learning under a composite quality-and-faithfulness reward with BERTScore anti-drift — orchestrated with vLLM and Verl across multi-GPU clusters.
+          - Pretrained 400M and 1.4B models on 8.2B / 28B refined tokens, outperforming the best heuristic baseline on the 22-task DCLM Core zero-shot suite by 3-4% average accuracy.
+
+      - company: Carnegie Mellon University
+        position: Graduate Researcher — Prof. William W. Cohen
+        location: Pittsburgh, PA
+        start_date: 2025-12
+        end_date: 2026-06
+        summary: Agentic Systems with Pseudo-Tools
+        highlights:
+          - Built a Python framework on Pydantic-AI for modular agentic LLM systems centered on pseudo-tools — recursive LLM calls under restricted context — with LiteLLM routing across 100+ model APIs.
+          - First systematic engineering study of modular agents across 19 evaluation suites, showing static workflows are cheaper and more accurate than dynamic planners (0.64 vs 0.56 average correctness at half the cost).
+          - Designed three learning methods and applied NSGA-II evolutionary search to recover cost-quality Pareto frontiers; the learned orchestrator reached 0.76 vs 0.55 for a human-engineered baseline.
+
+      - company: Carnegie Mellon University
+        position: Graduate Researcher — Prof. Yiming Yang
+        location: Pittsburgh, PA
+        start_date: 2025-12
+        end_date: 2026-06
+        summary: Long-Horizon ML Agent Planning
+        highlights:
+          - Introduced a dataset of paired human and agent trajectories covering 4,672 Kaggle runs across 134 MLE-bench competitions and 151K code snapshots.
+          - Fine-tuned Qwen3-1.7B labelers via distillation from a GPT-5-mini teacher over 136 state tags and 85 action labels, validated against human annotations.
+          - Identified a structural planning gap where agents compress development phases into a static loop; a prompt-level harness improved leaderboard score on most of 7 evaluated competitions. Released on HuggingFace under CC-BY-4.0.
+
+      - company: University of Washington
+        position: Research Assistant — Prof. Wanning Chen
+        location: Seattle, WA
+        start_date: 2023-11
+        end_date: 2024-12
+        summary: High-Dimensional Learning for Multi-Sourced Data
+        highlights:
+          - Deployed a transfer-learning matrix completion framework using proxy representations and SVD low-rank approximation to improve prediction on sparse target domains.
+          - Aggregated 2M+ NetEase users and content into 200x70 interaction matrices; cross-validated on Frobenius norms, reducing RMSE from 0.6 to 0.35.
+
+      - company: University of Washington
+        position: Research Assistant — Prof. Jane Tan, Prof. Yong Tan
+        location: Seattle, WA
+        start_date: 2023-11
+        end_date: 2024-12
+        summary: Behavioral Analysis of Open-Source Software Contributors
+        highlights:
+          - Built a large-scale GitHub and Hugging Face mining pipeline aggregating create, commit, and fork events into time-series panel data.
+          - Showed that different fork types have distinct effects on contribution activity, with no observable cross-repository spillover.
+
+    Experience:
+      - company: Google
+        position: Software Engineer Intern
+        location: Sunnyvale, CA
+        start_date: 2026-05
+        end_date: 2026-08
+        highlights:
+          - Built an LLM agent (NUAC) automating Workspace SRE access authorization, parsing natural-language peer-approval signals in Buganizer tickets into structured, policy-compliant endorsements.
+          - Hardened the agent with deterministic guardrails, metadata-grounded requester/approver checks, prompt-injection risk scoring, and immutable-history validation.
+          - Built the evaluation stack — a golden dataset of human-annotated and synthetic adversarial cases with daily automated monitoring — reaching 93.75% F1; shipped 23 CLs.
+
+      - company: Quantum Crypto
+        position: Research Intern
+        location: Beijing, China
+        start_date: 2025-01
+        end_date: 2025-08
+        highlights:
+          - Developed an LLM agent on Qwen2.5-14B with a RAG pipeline (query rewrite, retrieval, reranking), embedding internal corpora with sentence-transformers.
+          - Researched futures-spot hedging and funding-rate arbitrage strategies for cryptocurrencies.
+
+      - company: Elile AI
+        position: Machine Learning Engineer Intern
+        location: Seattle, WA
+        start_date: 2024-05
+        end_date: 2024-08
+        highlights:
+          - Built an Airflow ETL pipeline into AWS RDS and trained XGBoost models for predictive maintenance on 4K+ EV charging stations, achieving 7-day-ahead failure prediction.
+          - Containerized ML services with Docker and CI/CD, cutting deployment latency by 70%.
+
+      - company: Huawei Technologies
+        position: Data & Algorithm Engineer Intern
+        location: Beijing, China
+        start_date: 2023-06
+        end_date: 2023-09
+        highlights:
+          - Architected a distributed geospatial pipeline for 10M+ Points of Interest (Spark / Hadoop / HDFS + Elasticsearch + Kafka).
+          - Trained BERT-based embedding models for duplicate detection, achieving 0.89 precision and 0.76 F1 on a ~100K validation set.
+
+    Teaching:
+      - company: University of Washington
+        position: Teaching Assistant — Prof. Lucy Lu Wang
+        location: Seattle, WA
+        start_date: 2023-09
+        end_date: 2024-06
+        summary: INFO 498 Text Mining & Analytics; INFO 330 Databases & Data Modeling
+        highlights:
+          - Designed assignments and evaluated projects covering corpus analysis, TF-IDF retrieval, text classification, and information extraction.
+          - Led weekly SQL recitations and group project development for 35 students.
+
+    Skills:
+      - name: Languages
+        icon: fa-solid fa-code
+        keywords: "Python, C++, Java, TypeScript, JavaScript, SQL, R, Shell"
+
+      - name: ML / LLM
+        icon: fa-solid fa-brain
+        keywords: "PyTorch, vLLM, Verl, Hugging Face, TensorFlow, Pydantic-AI, LiteLLM, LangChain, CUDA"
+
+      - name: Data & Infra
+        icon: fa-solid fa-server
+        keywords: "Spark, Hadoop, HDFS, Kafka, Airflow, AWS, GCP, Docker, Kubernetes"
+
+    Interests:
+      - name: Outside research
+        keywords: "Snowboarding, surfing, windsurfing, poker"

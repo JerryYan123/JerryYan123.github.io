@@ -1,0 +1,26 @@
+# Maps a last name to the co-author's full first-name variants and a homepage.
+# al-folio uses this to linkify co-authors in the publications list.
+# Add entries as you publish with more people.
+
+"cohen":
+  - firstname: ["William", "W.", "W. W.", "William W."]
+    url: https://wwcohen.github.io/
+
+"xiong":
+  - firstname: ["Chenyan", "C."]
+    url: https://www.cs.cmu.edu/~cx/
+
+"yang":
+  - firstname: ["Yiming", "Y."]
+    url: https://www.cs.cmu.edu/~yiming/
+
+"koyejo":
+  - firstname: ["Sanmi", "S.", "Oluwasanmi"]
+    url: https://cs.stanford.edu/~sanmi/
+
+"sun":
+  - firstname: ["Weiwei", "W."]
+
+"tan":
+  - firstname: ["Yong", "Y."]
+    url: https://foster.uw.edu/faculty-research/directory/yong-tan/
