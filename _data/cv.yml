@@ -40,57 +40,12 @@ cv:
           - "Coursework: Machine Learning, NLP, Numerical Analysis, Probability I & II, Linear Algebra, Methods in Data Science."
 
     Research:
-      - company: Stanford University & Carnegie Mellon University
-        position: RA — Prof. Sanmi Koyejo (Stanford); Graduate Researcher — Prof. Chenyan Xiong (CMU)
-        location: Palo Alto, CA / Pittsburgh, PA
-        start_date: 2026-01
-        summary: "LLM Pre-training & Post-training: RL Environment Scaling Laws · Pre-training Data Refinement (manuscripts in preparation)"
-        highlights:
-          - Developing scaling laws that predict how much RL post-training will improve a model from measurable properties of the training environment, with controlled experiments that hold the RL algorithm fixed across math, coding, and tool-use tasks.
-          - Built a model-based HTML-to-text refiner (Qwen3-1.7B, 32K context) that replaces the standard heuristic cleaning pipeline in one pass, lifting token retention from 40.5% to 54.7% on DCLM CommonCrawl; trained via SFT warmup then GRPO with a quality-and-faithfulness reward on vLLM/Verl.
-          - Pretrained 400M and 1.4B models on 8.2B / 28B refined tokens, beating the best heuristic baseline by 3-4% average accuracy on the 22-task DCLM Core suite.
-
-      - company: Carnegie Mellon University
-        position: Graduate Researcher — Prof. William W. Cohen (CMU, Google DeepMind); Prof. Yiming Yang (CMU)
-        location: Pittsburgh, PA
-        start_date: 2025-12
-        end_date: 2026-06
-        summary: "Agentic Systems & Agent Planning: Pseudo-Tools · Long-Horizon ML Agent Planning"
-        highlights:
-          - Built a modular agentic-LLM framework on Pydantic-AI centered on pseudo-tools, and ran the first systematic study across 19 evaluation suites showing static workflows beat dynamic planners on cost and accuracy (0.64 vs 0.56 at half the cost); a learned orchestrator reached 0.76 vs 0.55 for a hand-engineered baseline.
-          - Introduced a dataset of 4,672 paired human/agent Kaggle trajectories (134 MLE-bench competitions, 151K snapshots) exposing a structural planning gap where agents collapse development phases into a static loop; a prompt-level harness improved leaderboard score on most of 7 competitions. Released on HuggingFace (CC-BY-4.0).
-
-      - company: University of Washington
-        position: Research Assistant — Prof. Wanning Chen
-        location: Seattle, WA
-        start_date: 2023-11
-        end_date: 2024-12
-        summary: High-Dimensional Learning for Multi-Sourced Data
-        highlights:
-          - Deployed a transfer-learning matrix completion framework using proxy representations and SVD low-rank approximation to improve prediction on sparse target domains.
-          - Aggregated 2M+ NetEase users and content into 200x70 interaction matrices; cross-validated on Frobenius norms, reducing RMSE from 0.6 to 0.35.
-
-      - company: University of Washington
-        position: Research Assistant — Prof. Jane Tan, Prof. Yong Tan
-        location: Seattle, WA
-        start_date: 2023-11
-        end_date: 2024-12
-        summary: Behavioral Analysis of Open-Source Software Contributors
-        highlights:
-          - Built a large-scale GitHub and Hugging Face mining pipeline aggregating create, commit, and fork events into time-series panel data.
-          - Showed that different fork types have distinct effects on contribution activity, with no observable cross-repository spillover.
-
+      - bullet: "**LLM Pre-training & Post-training** (01/2026 – present) — Research Assistant with Prof. Sanmi Koyejo (Stanford) and Graduate Researcher with Prof. Chenyan Xiong (CMU); manuscripts in preparation. Developing scaling laws that predict how much RL post-training will improve a model from measurable properties of the training environment. Built a model-based HTML-to-text refiner (Qwen3-1.7B, SFT + GRPO on vLLM/Verl) lifting token retention from 40.5% to 54.7% on DCLM CommonCrawl; models pretrained on the refined tokens beat the best heuristic baseline by 3–4% on DCLM Core."
+      - bullet: "**Agentic Systems & Agent Planning** (12/2025 – 06/2026) — Graduate Researcher with Prof. William W. Cohen (CMU, Google DeepMind) and Prof. Yiming Yang (CMU). Built a modular agentic-LLM framework centered on pseudo-tools and ran the first systematic study across 19 evaluation suites showing static workflows beat dynamic planners (0.64 vs 0.56 average correctness at half the cost). Introduced a dataset of 4,672 paired human/agent Kaggle trajectories exposing a structural planning gap in agents; a prompt-level harness improved leaderboard score on most of 7 competitions (released on HuggingFace, CC-BY-4.0)."
+      - bullet: "**Earlier, University of Washington** (2023 – 2024) — transfer-learning matrix completion for multi-source recommendation with Prof. Wanning Chen (RMSE 0.6 → 0.35 on NetEase data); large-scale GitHub / Hugging Face mining of fork behavior in open source with Prof. Jane Tan and Prof. Yong Tan."
 
     Teaching:
-      - company: University of Washington
-        position: Teaching Assistant — Prof. Lucy Lu Wang
-        location: Seattle, WA
-        start_date: 2023-09
-        end_date: 2024-06
-        summary: INFO 498 Text Mining & Analytics; INFO 330 Databases & Data Modeling
-        highlights:
-          - Designed assignments and evaluated projects covering corpus analysis, TF-IDF retrieval, text classification, and information extraction.
-          - Led weekly SQL recitations and group project development for 35 students.
+      - bullet: "**Teaching Assistant, University of Washington** (2023 – 2024) — INFO 498 Text Mining & Analytics and INFO 330 Databases & Data Modeling with Prof. Lucy Lu Wang; designed NLP assignments and led weekly SQL recitations for 35 students."
 
     Skills:
       - name: Languages
