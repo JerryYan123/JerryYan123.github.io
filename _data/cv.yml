@@ -40,47 +40,25 @@ cv:
           - "Coursework: Machine Learning, NLP, Numerical Analysis, Probability I & II, Linear Algebra, Methods in Data Science."
 
     Research:
-      - company: Stanford University
-        position: Research Assistant — Prof. Sanmi Koyejo
-        location: Palo Alto, CA
-        start_date: 2026-05
-        summary: RL Environment Scaling Laws (manuscript in preparation)
-        highlights:
-          - Developing scaling laws that predict how much RL post-training will improve a model from measurable properties of the training environment, rather than from compute alone.
-          - Designed metrics that make these environment properties controllable and cheap to measure, enabling prediction before a full training run is committed.
-          - Running controlled experiments that hold the RL algorithm fixed to isolate environment effects across math, coding, and tool-use tasks.
-
-      - company: Carnegie Mellon University
-        position: Graduate Researcher — Prof. Chenyan Xiong
-        location: Pittsburgh, PA
+      - company: Stanford University & Carnegie Mellon University
+        position: RA — Prof. Sanmi Koyejo (Stanford); Graduate Researcher — Prof. Chenyan Xiong (CMU)
+        location: Palo Alto, CA / Pittsburgh, PA
         start_date: 2026-01
-        summary: Pre-training Data Refinement (manuscript in preparation)
+        summary: "LLM Pre-training & Post-training: RL Environment Scaling Laws · Pre-training Data Refinement (manuscripts in preparation)"
         highlights:
-          - Built an end-to-end model-based HTML-to-text refiner on Qwen3-1.7B with 32K-token context that replaces the standard multi-stage heuristic pipeline in a single pass, lifting token retention from 40.5% to 54.7% on DCLM CommonCrawl.
-          - Trained the refiner in two stages — SFT warmup on quality-merged labels, then GRPO reinforcement learning under a composite quality-and-faithfulness reward with BERTScore anti-drift — orchestrated with vLLM and Verl across multi-GPU clusters.
-          - Pretrained 400M and 1.4B models on 8.2B / 28B refined tokens, outperforming the best heuristic baseline on the 22-task DCLM Core zero-shot suite by 3-4% average accuracy.
+          - Developing scaling laws that predict how much RL post-training will improve a model from measurable properties of the training environment, with controlled experiments that hold the RL algorithm fixed across math, coding, and tool-use tasks.
+          - Built a model-based HTML-to-text refiner (Qwen3-1.7B, 32K context) that replaces the standard heuristic cleaning pipeline in one pass, lifting token retention from 40.5% to 54.7% on DCLM CommonCrawl; trained via SFT warmup then GRPO with a quality-and-faithfulness reward on vLLM/Verl.
+          - Pretrained 400M and 1.4B models on 8.2B / 28B refined tokens, beating the best heuristic baseline by 3-4% average accuracy on the 22-task DCLM Core suite.
 
       - company: Carnegie Mellon University
-        position: Graduate Researcher — Prof. William W. Cohen
+        position: Graduate Researcher — Prof. William W. Cohen (CMU, Google DeepMind); Prof. Yiming Yang (CMU)
         location: Pittsburgh, PA
         start_date: 2025-12
         end_date: 2026-06
-        summary: Agentic Systems with Pseudo-Tools
+        summary: "Agentic Systems & Agent Planning: Pseudo-Tools · Long-Horizon ML Agent Planning"
         highlights:
-          - Built a Python framework on Pydantic-AI for modular agentic LLM systems centered on pseudo-tools — recursive LLM calls under restricted context — with LiteLLM routing across 100+ model APIs.
-          - First systematic engineering study of modular agents across 19 evaluation suites, showing static workflows are cheaper and more accurate than dynamic planners (0.64 vs 0.56 average correctness at half the cost).
-          - Designed three learning methods and applied NSGA-II evolutionary search to recover cost-quality Pareto frontiers; the learned orchestrator reached 0.76 vs 0.55 for a human-engineered baseline.
-
-      - company: Carnegie Mellon University
-        position: Graduate Researcher — Prof. Yiming Yang
-        location: Pittsburgh, PA
-        start_date: 2025-12
-        end_date: 2026-06
-        summary: Long-Horizon ML Agent Planning
-        highlights:
-          - Introduced a dataset of paired human and agent trajectories covering 4,672 Kaggle runs across 134 MLE-bench competitions and 151K code snapshots.
-          - Fine-tuned Qwen3-1.7B labelers via distillation from a GPT-5-mini teacher over 136 state tags and 85 action labels, validated against human annotations.
-          - Identified a structural planning gap where agents compress development phases into a static loop; a prompt-level harness improved leaderboard score on most of 7 evaluated competitions. Released on HuggingFace under CC-BY-4.0.
+          - Built a modular agentic-LLM framework on Pydantic-AI centered on pseudo-tools, and ran the first systematic study across 19 evaluation suites showing static workflows beat dynamic planners on cost and accuracy (0.64 vs 0.56 at half the cost); a learned orchestrator reached 0.76 vs 0.55 for a hand-engineered baseline.
+          - Introduced a dataset of 4,672 paired human/agent Kaggle trajectories (134 MLE-bench competitions, 151K snapshots) exposing a structural planning gap where agents collapse development phases into a static loop; a prompt-level harness improved leaderboard score on most of 7 competitions. Released on HuggingFace (CC-BY-4.0).
 
       - company: University of Washington
         position: Research Assistant — Prof. Wanning Chen
