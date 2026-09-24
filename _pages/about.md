@@ -26,21 +26,13 @@ latest_posts:
   limit: 3
 ---
 
-I am a master's student in Computational Data Science at **Carnegie Mellon University**. I work with
+I am a master's student in Computational Data Science at **Carnegie Mellon University**, working with
 [Chenyan Xiong](https://www.cs.cmu.edu/~cx/) on pre-training data, [William W. Cohen](https://wwcohen.github.io/)
 on agentic systems, and [Yiming Yang](https://www.cs.cmu.edu/~yiming/) on agent planning. I am also a
-research assistant with [Sanmi Koyejo](https://cs.stanford.edu/~sanmi/) at **Stanford**, working on
-scaling laws for reinforcement learning environments.
+research assistant with [Sanmi Koyejo](https://cs.stanford.edu/~sanmi/) at **Stanford**.
 
-My research asks **what actually makes a language model better** — which data is worth training on,
-which environments make RL pay off, and why agents that plan well on paper still fail on long-horizon
-work. I am drawn to problems where a careful measurement overturns an assumption the field has been
-running on: that heuristic pipelines are good enough for pre-training data, or that dynamic planners
-beat static workflows.
+My research asks **what actually makes a language model better**: which data is worth training on,
+which environments make RL pay off, and why agents still fail on long-horizon work.
 
-Previously I was a software engineer intern at **Google**, where I built an LLM agent for Workspace SRE
-access authorization. Before CMU I studied Informatics and Applied Mathematics at the **University of
-Washington**, graduating *magna cum laude*.
-
-I am on the job market for **research scientist / research engineer** roles starting 2027. Feel free to
-reach out.
+Previously I interned at **Google** and graduated *magna cum laude* from the **University of Washington**.
+I am looking for **research scientist / engineer** roles starting 2027.

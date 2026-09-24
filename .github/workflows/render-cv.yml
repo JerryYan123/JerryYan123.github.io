@@ -12,7 +12,7 @@ on:
   workflow_call:
   workflow_dispatch:
 permissions:
-  contents: write
+  contents: read
 jobs:
   rendercv:
     name: RenderCV
@@ -42,17 +42,23 @@ jobs:
             echo "Missing RenderCV config file!"
             exit 1
           fi
-          rendercv render $cv_file --settings $settings
-          rm assets/rendercv/rendercv_output/*.typ
+          # The website's CV page also reads `label` and `summary`, which RenderCV's
+          # schema rejects, so render from a copy without those web-only fields.
+          python - "$cv_file" <<'PY'
+          import sys
+          import yaml
+          data = yaml.safe_load(open(sys.argv[1], encoding="utf-8"))
+          for key in ("label", "summary", "image"):
+              data["cv"].pop(key, None)
+          with open("_data/cv.rendercv.yml", "w", encoding="utf-8") as fh:
+              yaml.safe_dump(data, fh, sort_keys=False, allow_unicode=True, width=1000)
+          PY
+          rendercv render _data/cv.rendercv.yml --settings $settings
+          rm _data/cv.rendercv.yml assets/rendercv/rendercv_output/*.typ
+      # The CV page links the hand-made PDF in assets/pdf, so the rendered PDF is
+      # kept as a build artifact only and not committed to the public repository.
       - name: Upload rendercv_output as an artifact
         uses: actions/upload-artifact@v4
         with:
           name: RenderCV Output
           path: assets/rendercv/rendercv_output
-      - name: Push the changes
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-          git add -A
-          git commit -m "chore: render the latest CV"
-          git push

@@ -2,9 +2,7 @@ cv:
   name: Jiarui (Jerry) Yan
   label: MS in Computational Data Science, Carnegie Mellon University
   email: jerryy2@cs.cmu.edu
-  phone: "(206) 840-8166"
   location: Pittsburgh, PA
-  image: ""
   summary: >
     Master's student at Carnegie Mellon working on LLM pre-training data, post-training,
     reinforcement learning, and agentic systems. Previously a software engineer intern at Google.
@@ -59,7 +57,3 @@ cv:
       - name: Data & Infra
         icon: fa-solid fa-server
         keywords: "Spark, Hadoop, HDFS, Kafka, Airflow, AWS, GCP, Docker, Kubernetes"
-
-    Interests:
-      - name: Outside research
-        keywords: "Snowboarding, surfing, windsurfing, poker"
