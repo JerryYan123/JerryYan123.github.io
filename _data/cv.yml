@@ -4,14 +4,14 @@ cv:
   email: jerryy2@cs.cmu.edu
   location: Pittsburgh, PA
   summary: >
-    Master's student at Carnegie Mellon working on LLM pre-training data, post-training,
-    reinforcement learning, and agentic systems. Previously a software engineer intern at Google.
+    Master's student at Carnegie Mellon working on LLM pre-training data, RL post-training,
+    and long-horizon agents. Software engineer intern at Google in summer 2026.
 
   social_networks:
     - network: GitHub
       username: JerryYan123
     - network: LinkedIn
-      username: JerryY
+      username: jerryy
 
   sections:
     Education:
@@ -21,7 +21,7 @@ cv:
         area: Computational Data Science
         studyType: MS
         start_date: 2025-08
-        end_date: 2027-05
+        end_date: 2026-12
         score: "GPA 3.8/4.0"
         courses: "Large Language Models, Advanced NLP, Multimodal Machine Learning, Deep Learning, Cloud Computing, Distributed Systems"
 
@@ -37,10 +37,16 @@ cv:
           - Magna Cum Laude (top 3.5%); Dean's List every term.
           - "Coursework: Machine Learning, NLP, Numerical Analysis, Probability I & II, Linear Algebra, Methods in Data Science."
 
-    Research:
-      - bullet: "**LLM Pre-training & Post-training** (01/2026 – present) — Research Assistant with Prof. Sanmi Koyejo (Stanford) and Graduate Researcher with Prof. Chenyan Xiong (CMU); manuscripts in preparation. Developing scaling laws that predict how much RL post-training will improve a model from measurable properties of the training environment. Built a model-based HTML-to-text refiner (Qwen3-1.7B, SFT + GRPO on vLLM/Verl) lifting token retention from 40.5% to 54.7% on DCLM CommonCrawl; models pretrained on the refined tokens beat the best heuristic baseline by 3–4% on DCLM Core."
-      - bullet: "**Agentic Systems & Agent Planning** (12/2025 – 06/2026) — Graduate Researcher with Prof. William W. Cohen (CMU, Google DeepMind) and Prof. Yiming Yang (CMU). Built a modular agentic-LLM framework centered on pseudo-tools and ran the first systematic study across 19 evaluation suites showing static workflows beat dynamic planners (0.64 vs 0.56 average correctness at half the cost). Introduced a dataset of 4,672 paired human/agent Kaggle trajectories exposing a structural planning gap in agents; a prompt-level harness improved leaderboard score on most of 7 competitions (released on HuggingFace, CC-BY-4.0)."
-      - bullet: "**Earlier, University of Washington** (2023 – 2024) — transfer-learning matrix completion for multi-source recommendation with Prof. Wanning Chen (RMSE 0.6 → 0.35 on NetEase data); large-scale GitHub / Hugging Face mining of fork behavior in open source with Prof. Jane Tan and Prof. Yong Tan."
+    Research (Project Lead):
+      - bullet: "**ReScraper: Pre-training Data Curation** (01/2026 – present) — Graduate Researcher with Prof. Chenyan Xiong (CMU LTI); co-first author, under review. One 0.6B model (Qwen3-0.6B) replaces the heuristic HTML scraper and rule-based filter stack: it extracts a page's main content, then keeps, edits, deletes or rewrites it, trained by two-stage SFT on labels from three teachers. Pretraining 400M, 1.4B and 2.8B models on its output gives the best DCLM Core at every scale, +3.8–4.7% relative over the strongest baseline. Paper, code, model and 7.44B-token corpus released."
+      - bullet: "**TraceML: Long-Horizon Auto-Research Agents** (01/2026 – present) — Graduate Researcher with Prof. Yiming Yang (CMU LTI); co-first author, NeurIPS 2026 Evaluations & Datasets Track. A dataset of 4,465 human Kaggle trajectories on 134 competitions, with 430 human and 207 agent trajectories paired on 7 of them and 151K code versions labeled by distilled Qwen3-1.7B labelers. Agents collapse into narrow loops, pivot too little or too much, and almost never return to abandoned approaches; a ~1K-token planning prompt distilled from human practice lifts scores on 5 of 7 competitions. Released an open-source toolkit that audits any agent run against human cohorts."
+
+    Research (Collaborations):
+      - bullet: "**Predicting RL Utility Across Scale** (05/2026 – 09/2026) — Graduate Researcher with Prof. Sanmi Koyejo (Stanford SAIL); under review. Which environments should an LLM learn from with RL, and does that choice hold as models scale: predicting how much RL post-training will improve a model from measurable properties of the environment, with the RL algorithm held fixed across math, coding and tool-use tasks."
+      - bullet: "**Agentic Systems** (01/2026 – 05/2026) — Graduate Researcher with Prof. William W. Cohen (CMU MLD, sponsored by Google DeepMind); co-first author on one paper, both under review. Built a modular agentic-LLM framework around pseudo-tools and ran a study across 19 evaluation suites showing static workflows beat dynamic planners (0.64 vs 0.56 average correctness at half the cost); learned reusable agent subroutines from experience."
+
+    Earlier Research:
+      - bullet: "**University of Washington** (2023 – 2024) — transfer-learning matrix completion for multi-source recommendation with Prof. Wanning Chen (RMSE 0.6 → 0.35 on NetEase data); large-scale GitHub / Hugging Face mining of fork behavior in open source with Prof. Jane Tan and Prof. Yong Tan (first author, POMS 2025)."
 
     Teaching:
       - bullet: "**Teaching Assistant, University of Washington** (2023 – 2024) — INFO 498 Text Mining & Analytics and INFO 330 Databases & Data Modeling with Prof. Lucy Lu Wang; designed NLP assignments and led weekly SQL recitations for 35 students."
