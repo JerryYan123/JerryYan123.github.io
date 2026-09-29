@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined [Prof. Chenyan Xiong](https://www.cs.cmu.edu/~cx/)'s group to work on *[ReScraper](https://cxcscmu.github.io/ReScraper/)*, a single small model that scrapes and cleans web data for LLM pretraining.
+Joined the *[ReScraper](https://cxcscmu.github.io/ReScraper/)* project: one small model that scrapes and cleans web data for LLM pretraining.
